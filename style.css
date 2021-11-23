@@ -1,0 +1,55 @@
+div.bola {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: red;
+  position: relative;
+  animation: myMove 2000ms infinite;
+}
+
+div.branco {
+  height: 100px;
+}
+div.quadrado {
+  width: 100px;
+  height: 30px;
+  margin-left: 400px;
+  border-radius: 100px;
+  background-color: blueviolet;
+  position: relative;
+  animation: myMove2 2000ms infinite;
+}
+
+button {
+  margin-top: 50px;
+  position: relative;
+  animation: myMove3 1000ms infinite;
+  background-color: aqua;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  border-color: antiquewhite;
+  
+}
+
+
+@keyframes myMove {
+  0% {opacity: 0;}
+  50% {transform: translateY(+50px); opacity: 100%}
+  from {left: 0px;}
+  to {left: 100%;}
+  100% {opacity: 0;}
+}
+
+@keyframes myMove2 {
+  0% {opacity:0;}
+  50% {transform: scale(4);}
+  100% {rotate: 90deg;}
+}
+
+@keyframes myMove3 {
+  
+  from {left: 0px;}
+  to {left: 600px;}
+  100% {rotate: 360deg}
+}
